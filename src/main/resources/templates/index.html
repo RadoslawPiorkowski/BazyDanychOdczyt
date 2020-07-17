@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<center>Strona glowna, zawiera liste osob w bazie danych</center>
+	
+	<tr th:each="osoba : ${listaOsob}">
+		<td th:text="${osoba.getImie()}"></td>
+		<td th:text="${osoba.getNazwisko()}"></td>
+	</tr>
+	
+</body>
+</html>
